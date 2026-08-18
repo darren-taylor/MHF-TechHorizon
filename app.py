@@ -67,7 +67,7 @@ OUTPUT FORMAT:
 # --- AGENT INITIALIZATION ---
 agent = None
 if api_key:
-    llm = ChatOpenAI(model="gpt-4o", temperature=0.1, api_key=api_key)
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1, api_key=api_key)
     # create_react_agent is the native LangGraph agent executor
     agent = create_react_agent(
         model=llm,
